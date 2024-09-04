@@ -1,3 +1,14 @@
+
+html {
+  font-size: calc(100vw / 37.5);
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  --base-content-width: 35rem;
+}
+html,
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
