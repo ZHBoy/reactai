@@ -1,0 +1,68 @@
+/* Card.css */
+.card-container {
+    width: 6.2rem;
+    height: 3.5rem;
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 0.3rem;
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease; /* 平滑过渡效果 */
+}
+
+.card-container:hover {
+    transform: scale(1.05); /* 鼠标悬停时放大1.1倍 */
+}
+
+.hover-button-container {
+    display: flex;
+    justify-content: flex-end;
+    flex-shrink: 0; /* 如果不希望子元素缩小，可以设置为0 */
+}
+
+.hover-button {
+    visibility: hidden;
+    opacity: 0;
+    width: 2rem;
+    height: 0.8rem;
+    border: 0;
+    border-radius: 8px;
+    font-size: .3rem;
+    color: white;
+    background-image: linear-gradient(to right,#5856d2, rgb(59, 12, 193) 50%);
+}
+
+
+/* 然后，在悬停时改变它们 */
+.card-container:hover .hover-button {
+    visibility: visible;
+    opacity: 1;
+}
+
+.card-title {
+    display: flex;
+    height: 1.2rem;
+    align-items: center;
+}
+
+.card-title h2 {
+    margin-left: 0.2rem;
+    font-size: 0.45rem;
+}
+
+.card-title img {
+    width: 0.9rem;
+    height: 0.9rem;
+    border-radius: 100%;
+}
+
+.card-description {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    margin: 0;
+    font-size: 0.32rem;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+
+}

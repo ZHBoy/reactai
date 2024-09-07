@@ -1,0 +1,15 @@
+
+.card-list-container {
+    width: 100%;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    flex-wrap: wrap; /* 允许子项自动换行 */
+    box-sizing: border-box;
+}
+
+.card-list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

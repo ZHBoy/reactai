@@ -1,12 +1,14 @@
 
 html {
   font-size: calc(100vw / 37.5);
+  background-color: #615d5d;
+
 }
 
 #root {
   width: 100vw;
   height: 100vh;
-  --base-content-width: 35rem;
+
 }
 html,
 body {

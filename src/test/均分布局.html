@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>横向均分，纵向自适应的列表</title>
+    <style>
+        .flex-container {
+            display: flex; /* 启用Flexbox布局 */
+            justify-content: space-between; /* 子元素之间的间隔平均分布 */
+            list-style: none; /* 移除列表项前的标记 */
+            padding: 0; /* 移除默认的padding */
+            margin: 0; /* 移除默认的margin */
+            height: 100%; /* 或具体高度，根据需要设置 */
+            border: 1px solid #000; /* 仅为演示添加边框 */
+            flex-wrap: wrap;
+        }
+
+        .flex-container li {
+            flex: 1; /* 使所有子元素等宽 */
+            height: 100%; /* 使子元素高度与父容器相同（如果需要的话） */
+            background-color: lightblue; /* 仅为演示添加背景色 */
+            border-right: 1px solid #ccc; /* 仅为演示添加右边框 */
+        }
+
+        .flex-container li:last-child {
+            border-right: none; /* 移除最后一个子元素的右边框 */
+        }
+
+        /* 如果父容器的高度不是100%，可以通过设置具体的height值来指定 */
+        /* 示例：假设父容器的高度为300px */
+        /*
+        .flex-container {
+          height: 300px;
+        }
+        */
+    </style>
+</head>
+<body>
+
+<div style="height: 200px;"> <!-- 假设这是父容器，有一个具体的高度 -->
+    <ul class="flex-container">
+        <li>列表项 1</li>
+        <li>列表项 2</li>
+        <li>列表项 3</li>
+        <li>列表项 1</li>
+        <li>列表项 2</li>
+        <li>列表项 3</li>
+        <li>列表项 1</li>
+        <li>列表项 2</li>
+        <li>列表项 3</li>
+        <li>列表项 1</li>
+        <li>列表项 2</li>
+        <li>列表项 3</li>
+        <li>列表项 1</li>
+        <li>列表项 2</li>
+        <li>列表项 3</li>
+        <li>列表项 1</li>
+        <li>列表项 2</li>
+        <li>列表项 3</li>
+        <li>列表项 1</li>
+        <li>列表项 2</li>
+        <li>列表项 3</li>
+        <!-- 可以根据需要添加更多列表项 -->
+    </ul>
+</div>
+
+</body>
+</html>
