@@ -3,6 +3,7 @@
 .topbar-container {
     display: flex;
     width: 100%;
+    position: fixed; /* 设置为固定定位 */
     height: 1.3rem;
     background-color: aliceblue;
     padding: 0.1rem;

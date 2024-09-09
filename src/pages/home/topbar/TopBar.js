@@ -6,7 +6,7 @@ const TopBarComponent = () => {
         <div className="topbar-container">
 
             <img src="https://st0.dancf.com/static/02/202306090204-51f4.png" alt=""/>
-            <p>会员支付页面</p>
+            <p>AI韭菜盒子</p>
         </div>
     );
 };

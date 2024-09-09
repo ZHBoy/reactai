@@ -11,10 +11,13 @@ function App() {
     const count = useSelector(state => state.counter.value);
 
     return (
-        <div>
+        <div >
             <TopBarComponent/>
-            <HomeOptionsComponent/>
-            <ComponentContentList optionId={count}/>
+            <div style={{display: 'flex', justifyContent: 'space-between'}}>
+                <HomeOptionsComponent/>
+                <ComponentContentList optionId={count}/>
+            </div>
+
         </div>
     );
 }

@@ -28,6 +28,7 @@
     border-radius: 8px;
     font-size: .3rem;
     color: white;
+    margin-top: 0.2rem;
     background-image: linear-gradient(to right,#5856d2, rgb(59, 12, 193) 50%);
 }
 
