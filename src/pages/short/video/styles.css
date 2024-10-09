@@ -1,0 +1,67 @@
+.video-player {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    background: #000;
+
+    video {
+        width: 100%;
+        height: auto;
+    }
+
+    .player-img {
+        position: absolute;
+        width: 4rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .progress-bar-container {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        transform: translateY(-0.8rem);
+
+        .progress-time{
+            position: absolute;
+            width: 5rem;
+            color: white;
+            font-size: 1.4rem;
+        }
+
+        .progress-bar {
+            position: absolute;
+            height: 0.2rem;
+            appearance: none;
+            right: 1rem;
+            left: 8rem;
+            background: #ddd;
+            outline: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .progress-bar::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 0.8rem;
+            height: 0.8rem;
+            background: rgb(255, 63, 85);
+            cursor: pointer;
+            border-radius: 50%;
+        }
+
+        .progress-bar::-moz-range-thumb {
+            width: 0.8rem;
+            height: 0.8rem;
+            background: rgb(255, 63, 85);
+            cursor: pointer;
+            border-radius: 50%;
+        }
+
+    }
+
+}
